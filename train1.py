@@ -8,7 +8,6 @@ from torch.utils.data import Dataset, DataLoader, random_split
 from torchvision import transforms, datasets
 
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-print('xd1')
 
 def train_model(model, train_loader, val_loader, criterion, optimizer):
     EPOCHS = 15
